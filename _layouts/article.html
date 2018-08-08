@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>{{ page.title }}</title>
+	<link rel="shortcut icon" href="./images/web.png">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="./lib/pace-master/pace.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./lib/pace-master/themes/silver/pace-theme-center-atom.css">
+</head>
+<body>
+  <div class="main-wapper">
+		<!-- header开始 -->
+		<header>
+			<nav id="menus">
+				<div>
+					<a href="index.html">
+						Samon<i class="fa fa-home fa-fw"></i>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<i class="fa fa-music fa-bell-o"></i>
+					</li>
+					<li class="showLogin">
+						<i class="fa fa-user"></i>
+					</li>
+					<li  class="showSlideBar">
+						<a href="#">
+							<i class="fa fa-bars fa-fw "></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<div class="inner">
+					<div class="hr1"></div>
+					<h1>白云遥</h1>
+					<div class="hr2"></div>
+					<div class="sub-heading">白云在天，丘陵自出。道里悠远，山川间之。将子无死，尚能复来。
+					</div>
+					<button class="toBottom">点我哦</button>
+					<div id="index">
+						<i class="fa fa-long-arrow-down"></i>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		<!-- header结束 -->
+		
+		<!-- content开始 -->
+		<div class="article">
+			<ul>
+				<li>编辑于</li>
+				<li>2018-7-24</li>
+				<li>&nbsp;|&nbsp;</li>
+				<li>浏览：</li>
+				<li>36次</li>
+				<li><i class="fa fa-heart"></i></li>
+			</ul>
+			<!-- <div class="info">
+				编辑于2018-7-24&nbsp;|&nbsp;浏览：15
+			</div>
+			<div class="info-right"><i class="fa fa-heart"></i></div> -->
+			<div class="content">
+				{{ content }}
+			</div>
+		</div>
+		<!-- content结束 -->
+
+		<!-- footer开始 -->
+		<footer>
+			<div class="share">
+				<ul>
+					<li>
+						<a href="#">
+							<i id="github" class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="qq" class="fa fa-qq"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weibo" class="fa fa-weibo"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weixin" class="fa fa-weixin weixin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="renren" class="fa fa-renren"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="youtube" class="fa fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+                <span>&copy;Samon - 2018 -7</span>
+            </div>
+		</footer>
+	</div>
+	<!-- 遮罩层 -->
+	<div class="mask"></div>
+	<!-- 侧边栏 -->
+	<div class="slideBar">
+		<div class="author">
+				<i class="fa fa-user"></i>
+		</div>
+        <ul>
+            <li>
+            	<a href="write.html">
+            		<i class="fa fa-fw fa-pencil-square">&nbsp;&nbsp;</i>发表日志
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-user">&nbsp;&nbsp;</i>生活随想
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-heartbeat">&nbsp;&nbsp;</i>项目经历
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-folder-open">&nbsp;&nbsp;</i>个人简历
+            	</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧边栏 -->
+    <div class="login-slideBar">
+		<div class="author">
+			<i class="fa fa-user"></i>
+		</div>
+        <ul>
+            <li>
+            	<input type="text" placeholder="用户名:"></input>
+            </li>
+            <li>
+            	<input type="password" placeholder="密码:">
+            </li>
+            <li>
+            	<button type="submit">登录</button>
+            </li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="css/wangEditor-3.0.16/release/wangEditor.min.js"></script>
+<script type="text/javascript">
+	var E = window.wangEditor
+    var editor = new E('#editor')
+    editor.create()
+</script>
+</html>
