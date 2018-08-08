@@ -1,11 +1,240 @@
 ---
-　　layout: default
-　　title: 我的Blog
+layout: default
+title: Samon的博客
 ---
-　　<h2>{{ page.title }}</h2>
-　　<p>最新文章</p>
-　　<ul>
-　　　　{% for post in site.posts %}
-　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　　　{% endfor %}
-　　</ul>
+	<div class="main-wapper">
+		<!-- header开始 -->
+		<header>
+			<nav id="menus">
+				<div>
+					<a href="index.html">
+						Samon<i class="fa fa-home fa-fw"></i>
+					</a>	
+				</div>
+				<ul>
+					<li class="showLogin">
+						<i class="fa fa-user"></i>
+					</li>
+					<li  class="showSlideBar">
+						<a href="#">
+							<i class="fa fa-bars fa-fw "></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<div class="inner">
+					<div class="hr1"></div>
+					<h1>Web前端工程师</h1>
+					<div class="hr2"></div>
+					<div class="sub-heading">与恶龙缠斗过久，自身亦成为恶龙。凝视深渊过久，深渊将回以凝视。
+					</div>
+					<button class="toBottom">了解我</button>
+					<div id="index" class="toBottom">
+						<i class="fa fa-long-arrow-down"></i>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		<!-- header结束 -->
+
+		<!-- 内容开始 -->
+		<div class="content">
+			<section class="section-one">
+				<div class="wapper">
+					<div>
+						<h2>学习目标</h2>
+						<div class="hr"></div>
+						<div class="sub-heading">
+							前端小白学习路径
+						</div>
+					</div>
+					<div class="icon-group">
+						<span class="icon">
+							<a href="##">CSS3&HTML5</a>
+						</span>
+						<span class="icon">
+							<a href="##">JavaScript</a>
+						</span>
+						<span class="icon">
+							<a href="##">Node.js</a>
+						</span>
+						<span class="icon">
+							<a href="##">Vue全家桶</a>
+						</span>
+						<span class="icon">
+							<a href="##">React</a>
+						</span>
+					</div>
+				</div>
+			</section>
+			<section class="section-two">
+				<div class="article-preview clear-fix">
+					<div class="img-section">
+						<img src="images/art1.jpg">
+					</div>
+					<div class="text-section">
+						<h2>Font-Awesome</h2>
+						<div class="steam">Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。
+						</div>
+					</div>
+				</div>
+				<div class="article-preview clear-fix">
+					<div class="text-section">
+						<h2>React</h2>
+						<div class="steam">
+							React是一个用于构建用户界面的JavaScript库。React主要用于构建UI很多人认为React是MVC中的V（视图）.React起源于Facebook 的内部项目，用来架设Instagram的网站，并于2013年5月开源。React 拥有较高的性能，代码逻辑非常简单，越来越多的人已开始关注和使用它。
+						</div>
+					</div>
+					<div class="img-section">
+						<img src="images/art2.jpg">
+					</div>
+				</div>
+				<div class="article-preview clear-fix">
+					<div class="img-section">
+						<img src="images/art3.jpg">
+					</div>
+					<div class="text-section">
+						<h2>JavaScript</h2>
+						<div class="steam">
+							JavaScript 是互联网上最流行的脚本语言，这门语言可用于 HTML 和 web，更可广泛用于服务器、PC、笔记本电脑、平板电脑和智能手机等设备。
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-three">
+				<div class="wapper">
+					<div>
+						<h2>文章</h2>
+						<div class="hr"></div>
+						<div class="sub-heading">
+							记录精彩瞬间！
+						</div>
+					</div>
+					<div class="card-group clear-fix">
+						<ul>
+						{% for post in site.posts %}
+							<li>
+								<div class="card">
+									<h2>{{ page.title }}</h2>
+									<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+									<div>{{ post.date | date_to_string }}</div>
+								</div>
+							</li>
+						{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- 内容结束 -->
+
+		<!-- footer开始 -->
+		<footer>
+			<div class="share">
+				<ul>
+					<li>
+						<a href="#">
+							<i id="github" class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="qq" class="fa fa-qq"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weibo" class="fa fa-weibo"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weixin" class="fa fa-weixin weixin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="renren" class="fa fa-renren"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="youtube" class="fa fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+                <span>&copy;Samon - 2018 -7</span>
+            </div>
+		</footer>
+		<!-- footer结束 -->
+	</div>
+	<!-- 遮罩层 -->
+	<div class="mask"></div>
+	<!-- 右侧边栏 -->
+	<div class="slideBar">
+        <ul>
+            <li>
+            	<a href="write.html">
+            		<i class="fa fa-fw fa-pencil">&nbsp;&nbsp;</i>发表日志
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-user">&nbsp;&nbsp;</i>个人资料
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-heartbeat">&nbsp;&nbsp;</i>项目经历
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-folder-open">&nbsp;&nbsp;</i>个人简历
+            	</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧边栏 -->
+    <div class="login-slideBar">
+		<div class="author">
+			<i class="fa fa-user"></i>
+		</div>
+        <ul>
+            <li>
+            	<input type="text" placeholder="用户名:"></input>
+            </li>
+            <li>
+            	<input type="password" placeholder="密码:">
+            </li>
+            <li>
+            	<button type="submit">登录</button>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+　　

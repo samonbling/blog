@@ -1,0 +1,110 @@
+@media screen and (max-width: 414px){
+	.banner .inner{
+		top: 120px;
+	}
+	.banner .inner h1{
+		max-width: 300px;
+		height:80px;
+		line-height: 80px;
+		text-align: center;
+		font-size: 26px;
+		margin:0 auto;
+		letter-spacing: 1px;
+
+	}
+	.banner .inner .hr1{
+		height: 1px;
+		float: left;
+		animation:mymove 16s infinite;
+		-webkit-animation:mymove 16s infinite; /*Safari and Chrome*/
+	}
+	@-webkit-keyframes mymove{ /*Safari and Chrome*/
+		0%{margin-left:0;width:0px;background:#fff;}
+		
+		50%{margin-left:0px;width:244px;background:#000;}
+		
+		100%{margin-left:0px;width:0px;background:#fff;}
+
+	}
+	@keyframes mymove{
+		0%{margin-left:0;width:0px;background:#fff;}
+		/* 25% {left:50px;} */
+		50%{margin-left:0px;width:244px;background:#000;}
+		/* 75%{margin-left:50px;} */
+		100%{margin-left:0px;width:0px;background:#fff;}
+	}	
+	.banner .inner .hr2{
+		height: 1px;
+		background:#fff;
+		float: right;
+		animation:move 16s infinite;
+		-webkit-animation:move 16s infinite; /*Safari and Chrome*/
+	}
+	@-webkit-keyframes move{ /*Safari and Chrome*/
+		0%{margin-right:0px;width:0px;background:#000;}
+		/* 25% {left:50px;} */
+		50%{margin-right:0px;width:244px;background:#fff;}
+		/* 75%{margin-left:50px;} */
+		100%{margin-right:0px;width: 0px;background:#000;}
+	}
+	@keyframes move{
+		0%{margin-right:0px;width:0px;background:#000;}
+		/* 25% {left:50px;} */
+		50%{margin-right:0px;width:244px;background:#fff;}
+		/* 75%{margin-left:50px;} */
+		100%{margin-right:0px;width: 0px;background:#000;}
+	}
+	.sub-heading{
+		width: 200px;
+		margin:40px auto 0 auto;
+		text-align: justify;
+		letter-spacing: 1px;
+		color:#fff;
+		font-size: 14px;
+	}
+	.banner >.inner >button{
+		background:#999;
+	}
+	.banner >.inner >button:hover{
+		background:#777;
+	}
+	.banner >.inner >#index >i{
+		font-size: 22px;
+		color:#ddd;
+	}
+	.section-one{
+		height:532px;
+	}
+	.section-two{
+		height:auto;
+	}
+	.section-three >.wapper >div >.sub-heading,
+	.section-one >.wapper >div >.sub-heading{
+		text-align: center;
+	}
+	.section-two .article-preview .img-section{
+		width:100%;
+		max-height:200px;
+	}
+	.section-two .article-preview .img-section img{
+		width:100%;
+		height: 180px;
+	}
+	.section-two .article-preview .text-section{
+		position: relative;
+    	top: 5%;
+    	left: 5%;
+    	margin-top: 5%;
+    	margin-left: 5%;
+    	width: 80%;
+    	padding-bottom: 5%;
+	}
+	.section-two .article-preview .text-section h2{
+		text-align: center;
+	}
+	.section-two .article-preview .text-section .steam{
+		margin-top:12px;
+		text-indent:34px;
+		color:#999;
+	}
+}
