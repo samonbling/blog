@@ -67,7 +67,9 @@
 			</div>
 			<div class="info-right"><i class="fa fa-heart"></i></div> -->
 			<div class="content">
+				{{% if page.title == 'index' %}}
 				{{ content }}
+				{% endif %}
 			</div>
 		</div>
 		<!-- content结束 -->
