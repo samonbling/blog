@@ -221,27 +221,16 @@ nav ul li a{
 .card-group .card{
 	width:100%;
 	float: left;
-	min-height: 300px;
+	min-height: 80px;
 	-webkit-box-sizing: border-box;
     padding: 5%;
+	margin-bottom:14px;
 }
-.card:nth-child(1) {
+.card:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.08);
 }
-.card:nth-child(2) {
+.card:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.12);
-}
-.card:nth-child(3) {
-    background-color: rgba(0, 0, 0, 0.16);
-}
-.card:nth-child(4) {
-    background-color: rgba(0, 0, 0, 0.20);
-}
-.card:nth-child(5) {
-    background-color: rgba(0, 0, 0, 0.24);
-}
-.card:nth-child(6) {
-    background-color: rgba(0, 0, 0, 0.28);
 }
 footer{
 	height:200px;
