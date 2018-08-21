@@ -285,6 +285,21 @@ footer .share ul li a i{
 #weixin{
 	color:#58de58;
 }
+footer ul .wx a{
+	position: relative;
+}
+footer ul .wx a #pic{
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition:0.3s cubic-bezier(.8,.01,.35,1);
+	transform: scale(.5);
+}
+footer ul .wx a i:hover +#pic{
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+}
 footer .copy{
 	text-align: center;
 	margin:0 auto;
