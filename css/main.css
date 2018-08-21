@@ -128,6 +128,7 @@ nav ul li a{
 .content .section-one{
 	padding:100px 0;
 	background: rgba(48, 158, 148, 0.9);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 .content .section-one .wapper{
 	margin:0 auto;
