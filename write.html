@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Samon的博客</title>
+	<link rel="shortcut icon" href="images/web.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="main-wapper">
+		<!-- header开始 -->
+		<header>
+			<nav id="menus">
+				<div>
+					<a href="index.html">
+						Samon<i class="fa fa-home fa-fw"></i>
+					</a>
+				</div>
+				<ul>
+					<li>
+						<i class="fa fa-music fa-bell-o"></i>
+					</li>
+					<li class="showLogin">
+						<i class="fa fa-user"></i>
+					</li>
+					<li  class="showSlideBar">
+						<a href="#">
+							<i class="fa fa-bars fa-fw "></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="banner">
+				<div class="inner">
+					<div class="hr1"></div>
+					<h1>白云遥</h1>
+					<div class="hr2"></div>
+					<div class="sub-heading">白云在天，丘陵自出。道里悠远，山川间之。将子无死，尚能复来。
+					</div>
+					<button class="toBottom">点我哦</button>
+					<div id="index">
+						<i class="fa fa-long-arrow-down"></i>
+					</div>
+					
+				</div>
+			</div>
+		</header>
+		<!-- header结束 -->
+		
+		<!-- content开始 -->
+		<div class="content-group">
+			<div class="control">
+				<button id="top">回菜单</button>
+				<div class="add" onclick="show()">
+					<i class="fa fa-fw fa-plus"></i>新建文集
+				</div>
+				<div class="category">
+					<div class="add-cate" id="add-cate">
+						<input type="text" placeholder="请输入文集名..." id="yes">
+						<input type="button" value="提交" onclick="adds()">
+						<input type="button" onclick="hide()" value="取消" id="add-cat">
+					</div>
+					<ul id="add-date">
+						<li class="active">日记<i class="fa fa-fw fa-cog"></i></li>
+						<li>笔记</li>
+					</ul>
+				</div>
+			</div>
+			<div class="control-texts">
+				<div class="addAticle" id="addAticle" onclick="addArticle()">
+					<i class="fa fa-fw fa-plus-circle"></i>
+					新建文章
+				</div>
+				<ul id="addShow">
+					<li>
+						<p>2018-7-26</p>
+						<i class="fa fa-file"></i>
+					</li>
+				</ul>
+			</div>
+			<div class="editor">
+				<div class="title">
+					<input type="text" placeholder="文章标题" id="atitle">
+				</div>
+				<div class="feditor">
+					<div class="menus">	
+						<button ><i class="fa fa-share fa-fw"></i>发表文章</button>
+					</div>
+					<div id="editor"></div>
+				</div>
+			</div>
+		</div>
+		<!-- content结束 -->
+
+		<!-- footer开始 -->
+		<footer>
+			<div class="share">
+				<ul>
+					<li>
+						<a href="#">
+							<i id="github" class="fa fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="qq" class="fa fa-qq"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weibo" class="fa fa-weibo"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="weixin" class="fa fa-weixin weixin"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="renren" class="fa fa-renren"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i id="youtube" class="fa fa-youtube"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copy">
+                <span>&copy;Samon - 2018 -7</span>
+            </div>
+		</footer>
+	</div>
+	<!-- 遮罩层 -->
+	<div class="mask"></div>
+	<!-- 侧边栏 -->
+	<div class="slideBar">
+        <ul>
+            <li>
+            	<a href="write.html">
+            		<i class="fa fa-fw fa-pencil-square">&nbsp;&nbsp;</i>发表日志
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-user">&nbsp;&nbsp;</i>生活随想
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-heartbeat">&nbsp;&nbsp;</i>项目经历
+            	</a>
+            </li>
+            <li>
+            	<a href="#">
+            		<i class="fa fa-fw fa-folder-open">&nbsp;&nbsp;</i>个人简历
+            	</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧边栏 -->
+    <div class="login-slideBar">
+		<div class="author">
+			<i class="fa fa-user"></i>
+		</div>
+        <ul>
+            <li>
+            	<input type="text" placeholder="用户名:"></input>
+            </li>
+            <li>
+            	<input type="password" placeholder="密码:">
+            </li>
+            <li>
+            	<button type="submit">登录</button>
+            </li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="css/wangEditor-3.0.16/release/wangEditor.min.js"></script>
+<script type="text/javascript">
+	var E = window.wangEditor
+    var editor = new E('#editor')
+    editor.create()
+</script>
+</html>
