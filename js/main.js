@@ -103,7 +103,7 @@ function adds(){
     var add = document.getElementById("add-date");
     var li = document.createElement('li');
     var lis = add.getElementsByTagName("li");
-    var last = lis.length-1;
+    var last = lis.length;
     var last_1 = lis[last];
     var i = document.createElement('i');
     i.className = "fa fa-fw fa-cog";
