@@ -102,22 +102,21 @@ function show(){
 function adds(){
     var add = document.getElementById("add-date");
     var li = document.createElement('li');
-    var lis = add.getElementsByTagName("li");
-    var last = lis.length;
-    var last_1 = lis[last];
-    var i = document.createElement('i');
-    i.className = "fa fa-fw fa-cog";
     var text = document.getElementById("yes").value;
     li.innerHTML = text;
     var msg = confirm("确定创建该文集吗?");
     if(msg == true){
         add.appendChild(li);
+        var lis = add.getElementsByTagName("li");
+        var last = lis.length-1;
+        var last_1 = lis[last];
+        var i = document.createElement('i');
+        i.className = "fa fa-fw fa-cog";
         last_1.appendChild(i);
         hide();    
     }else{
         //否则返回操作
     }
-    
 }
 //添加内容
 function addArticle(){
