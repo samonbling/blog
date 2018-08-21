@@ -364,7 +364,7 @@ footer .copy span{
 	height:32px;
 	margin:0 auto;
 }
-.login-slideBar ul li button{
+.login-slideBar ul li >button{
 	width:inherit;
 	height: inherit;
 	line-height: 14px;
