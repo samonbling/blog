@@ -290,6 +290,8 @@ footer ul .wx a{
 }
 footer ul .wx a #pic{
 	position: absolute;
+	top: -270px;
+    left: -105px;
 	visibility: hidden;
 	opacity: 0;
 	transition:0.3s cubic-bezier(.8,.01,.35,1);
