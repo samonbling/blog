@@ -25,11 +25,11 @@ button{
 	border-radius: 5px;
 	color:#e2e2e2;
 	cursor: pointer;
-	-webkit-transition:.34s ease-in-out;
-	-moz-transition:.34s ease-in-out;
-	-ms-transition:.34s ease-in-out;
-	-o-transition:.34s ease-in-out;
-	transition:.34s ease-in-out;
+	-webkit-transition:.6s ease-in-out;
+	-moz-transition:.6s ease-in-out;
+	-ms-transition:.6s ease-in-out;
+	-o-transition:.6s ease-in-out;
+	transition:.6s ease-in-out;
 }
 button:focus{
 	outline:none;
