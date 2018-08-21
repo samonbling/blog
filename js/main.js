@@ -1,4 +1,4 @@
-;$(function(){
+$(function(){
     let slideBar = $(".slideBar"),
         mask = $(".mask"),
         showSlideBar = $(".showSlideBar"),
