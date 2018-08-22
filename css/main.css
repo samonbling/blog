@@ -155,21 +155,6 @@ nav ul li a {
 	margin: 0 5%;
 	box-shadow: 0 0 8px #217972;
 }
-.section-one .wapper .icon-group .icon:hover {
-  	 animation: spin 3s linear infinite;
-    -webkit-animation: spin 3s linear infinite;
-}
-@keyframes spin {
-	to {
-		-webkit-transform: rotate(1turn);
-	}
-}
-
-@-webkit-keyframes spin {
-	to {
-		-webkit-transform: rotate(1turn);
-	}
-}
 .section-one .wapper .icon-group .icon a {
     display: inline-block;
     margin: 38px 0 0 -20px;
@@ -261,6 +246,7 @@ footer .share ul li {
 }
 footer .share ul li:hover {
 	border: 1px solid #fff;
+	transition: .48s ease;
 }
 footer .share ul li a i {
 	font-size: 24px;
@@ -570,6 +556,11 @@ footer .copy span {
 }
 .control button:hover {
 	border-color: #f15434;
+	transition: .48s ease;
+	-webkit-transition: .48s ease;
+	-moz-transition: .48s ease;
+	-ms-transition: .48s ease;
+	-o-transition: .48s ease;
 }
 .control .add {
 	height: 30px;
@@ -591,7 +582,6 @@ footer .copy span {
 .control .category .add-cate input {
 	border: none;
 	outline: none;
-
 }
 .control .category .add-cate input:first-child {
 	border-radius: 2px;
@@ -599,7 +589,6 @@ footer .copy span {
 	height: 25px;
 	padding: 5px 14px;
 	font-size: 14px;
-
 }
 .control .category .add-cate input:nth-child(2) {
 	color: #42c02c;
@@ -611,7 +600,6 @@ footer .copy span {
 	cursor: pointer;
 	float: left;
 	font-size: 14px;
-
 }
 .control .category .add-cate input:last-child {
 	color: #e64c4a;
@@ -643,6 +631,11 @@ footer .copy span {
 
 .control .category ul li:hover {
 	background: rgba(255,255,255,.2);
+	transition: .48s ease;
+	-webkit-transition: .48s ease;
+	-moz-transition: .48s ease;
+	-ms-transition: .48s ease;
+	-o-transition: .48s ease;
 }
 .control .category ul .active {
 	background: rgba(255,255,255,.2);
@@ -673,6 +666,11 @@ footer .copy span {
 }
 .control-texts #addShow li:hover {
 	background: #eee;
+	transition: .48s ease;
+	-webkit-transition: .48s ease;
+	-moz-transition: .48s ease;
+	-ms-transition: .48s ease;
+	-o-transition: .48s ease;
 }
 .control-texts #addShow li p {
 	position: absolute;
@@ -718,10 +716,12 @@ footer .copy span {
 	float: right;
 	padding: 0;
 	border: none;
+	cursor: pointer;
 }
 .editor .feditor .menus button:hover {
 	background: #999;
 	border: none;
+	transition: .48s linear;
 }
 .editor .feditor #editor {
 	width: inherit;
