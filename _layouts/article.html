@@ -69,6 +69,43 @@
 				<div class="content">
 					{{ content }}
 				</div>
+				<div class="waper">
+					<div class="top">
+						<div class="login">
+							<a href="##">登录</a>
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="border-top"></div>
+						<textarea id="comment" type="text"></textarea>
+						<div class="border-left"></div>
+						<div class="border-right"></div>
+					</div>
+					<div class="btn-groups">
+						<ul>
+							<li></li>
+							<li>
+								<input type="file" name="file" id="uploading" accept="image/gif,image/jpeg,image/x-png" onchange="changepic(this)">
+								<div class="palate"></div>
+							</li>
+							<li id="pl">
+								<span>评论内容为空！</span>
+							</li>
+							<li>
+								<button type="submit" onclick="put()"></button>
+							</li>
+						</ul>
+						<div class="princess" id="princess">
+							<div class="top-img"></div>
+							<span>+</span>
+							<img id="show">
+							<div class="bottom-img"></div>
+						</div>
+						<div class="plno">
+							<span>还没有评论，快来抢沙发吧！</span>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!-- content结束 -->
 
