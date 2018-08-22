@@ -839,7 +839,7 @@ footer .copy span{
 }
 .waper .btn-groups .princess{
 	width:198px;
-	height: 199px;
+	height: 200px;
 	border-left:1px solid #e74851;
 	border-right:1px solid #e74851;
 	position: relative;
@@ -848,6 +848,8 @@ footer .copy span{
 	display: none;
 	z-index: 2;
 	background:#f8f7f8;
+	padding:0;
+	margin:0;
 }
 .waper .btn-groups .princess .top-img{
 	width:200px;
