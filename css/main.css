@@ -355,6 +355,11 @@ footer .copy span {
 }
 .login-slideBar .author i:hover {
 	color: #888;
+	transition: .48s ease-in-out;
+	-webkit-transition: .48s ease-in-out;
+	-moz-transition: .48s ease-in-out;
+	-ms-transition: .48s ease-in-out;
+	-o-transition: .48s ease-in-out;
 }
 /* 登录接口结束 */
 .login-slideBar form ul {
@@ -382,6 +387,11 @@ footer .copy span {
 }
 .login-slideBar form ul li input:hover {
 	background: rgba(255,255,255,.7);
+	transition: .48s ease;
+	-webkit-transition: .48s ease;
+	-moz-transition: .48s ease;
+	-ms-transition: .48s ease;
+	-o-transition: .48s ease;
 }
 .login-slideBar form ul li button {
 	width: 70%;
@@ -419,6 +429,11 @@ footer .copy span {
 
 .slideBar ul li:hover {
     background: rgba(255,255,255,0.1);
+    transition: .48s ease;
+    -webkit-transition: .48s ease;
+    -moz-transition: .48s ease;
+    -ms-transition: .48s ease;
+    -o-transition: .48s ease;
 }
 .slideBar ul li a {
     display: inline-block;
