@@ -136,38 +136,3 @@ function addArticle() {
         icons[j].className = "fa fa-file";
     }
 }
-//若textarea为空提交后显示错误信息；
-var timer = window.setInterval(put,2000);
-function put() {
-    var pl = document.getElementById('pl');
-    if (comment.value == '') {
-        pl.style.display = 'block';
-    }
-    else {
-        pl.style.display = 'none';
-    }
-}
-// 将input获取的链接给了id为show的元素，达到预览的目的。
-function changepic(obj) {
-    var newsrc = getObjectURL(obj.files[0]);
-    var princess = document.getElementById('princess');
-    if (newsrc != '') {
-        document.getElementById('show').src = newsrc;
-        princess.style.display = 'block';
-    }
-    
-}
-//建立一个可存取到该file的url
-function getObjectURL(file) {
-    var url = null;
-    if (window.createObjectURL!=undefined) { // basic
-        url = window.createObjectURL(file);
-    }
-    else if (window.URL!=undefined) { // mozilla(firefox)
-        url = window.URL.createObjectURL(file);
-    }
-    else if (window.webkitURL!=undefined) { // webkit or chrome
-        url = window.webkitURL.createObjectURL(file);
-    }
-    return url;
-}
