@@ -1,0 +1,428 @@
+/*
+	Author:  Samon·Edson
+	Update on：2018-8-11 19:28
+	Doraemon style sheet, left and right with the actual, do not be true.
+ */
+@charset "utf-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #88ffff;
+	z-index: 0;
+}
+/* 容器 */
+.group {
+	z-index: 1;
+}
+/* 头部定义 */
+.group .head {
+	width: 300px;
+	height: 300px;
+	border-radius: 47%;
+	border: 2px solid #333;
+	background: #597ab1;
+	margin: 90px auto 0 auto;
+	z-index: 2;
+}
+/* 项圈定义 */
+.group .neck {
+	width: 200px;
+	height: 24px;
+	border-radius: 22px;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	background: #c71010;
+	margin: -22px auto;
+	z-index: 6;
+	position: relative;
+	top: -3px;
+}
+/* 铃铛 */
+.group .neck .ornament {
+	width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border: 2px solid #000;
+    background: #f9f12a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f9f12a),color-stop(0.5, #e9e11a), to(#a9a100));
+    background: -moz-linear-gradient(top, #f9f12a, #e9e11a 75%,#a9a100);
+    box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -5px 3px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px 5px 10px rgba(0,0,0,0.25);
+	position: absolute;
+	top: 6px;
+	left: 80px;
+	z-index: 6;
+}
+.group .neck .ornament .x-line {
+	width: 39px;
+	height: 2px;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+	position: absolute;
+	top: 12px;
+	left: 1px;
+	z-index: 7;
+}
+.group .neck .ornament .ball {
+	width: 12px;
+	height: 12px;
+	background: #000;
+	border-radius: 6px;
+	position: absolute;
+	top: 20px;
+	left: 14px;
+	z-index: 7;
+}
+.group .neck .ornament .y-line {
+	width: 3px;
+	height: 8px;
+	background: #000;
+	position: absolute;
+	top: 32px;
+	left: 18px;
+	z-index: 7;
+}
+/* 眼睛 */
+.group .head .eye {
+	position: relative;
+	top: 38px;
+	left: 74px;
+}
+/* 眼球定义 */
+.eyeball {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: none;
+	background: #333;
+}
+/* 左眼眶 */
+.group .head .eye .left {
+	width: 70px;
+	height: 80px;
+	border-radius: 44%;
+	border: 2px solid #333;
+	z-index: 4;
+	position: absolute;
+	left: 7px;
+	background: #f2f2f2;
+}
+/* 左眼球 */
+.group .head .eye .left .eyeball {
+	position: absolute;
+	top: 38px;
+	left: 38px;
+}
+/* 右眼眶 */
+.group .head .eye .right {
+	width: 70px;
+	height: 80px;
+	border-radius: 44%;
+	border: 2px solid #333;
+	z-index: 4;
+	position: absolute;
+	right: 147px;
+	background: #f2f2f2;
+}
+/* 右眼球 */
+.group .head .eye .right .eyeball {
+	position: absolute;
+	top: 38px;
+	left: 12px;
+}
+/* 眼睛下部组件 */
+.group .head .eye-bottom {
+	width: 250px;
+	height: 200px;
+	border-radius: 48%;
+	border: 2px solid #333;
+	position: relative;
+	top: 78px;
+	left: 24px;
+	background: #f2f2f2;
+	z-index: 3;
+}
+/* 鼻子 */
+.group .head .eye-bottom .nose {
+	width: 34px;
+	height: 34px;
+	background: #c71010;
+	border-radius: 50%;
+	position: absolute;
+	left: 111px;
+	top: 29px;
+}
+.group .head .eye-bottom .y-line {
+	width: 3px;
+	height: 100px;
+	background: #333;
+	z-index: 4;
+	position: absolute;
+	top: 62px;
+	left: 126px;
+}
+/* 嘴 */
+.group .head .eye-bottom .x-line {
+	width: 210px;
+	height: 240px;
+	border-radius: 105px;
+	border-bottom: 4px solid #333;
+	position: absolute;
+	top: -80px;
+	left: 18px;
+	z-index: 4;
+}
+/* 覆盖杂质 */
+.group .head .eye-bottom .r-black {
+	width: 50px;
+	height: 60px;
+	background: #f2f2f2;
+	border-radius: 0 20px 0 0;
+	position: absolute;
+	top: 58px;
+	right: 10px;
+	z-index: 5;
+}
+.group .head .eye-bottom .l-black {
+	width: 50px;
+	height: 60px;
+	background: #f2f2f2;
+	border-radius: 20px 0 0 0;
+	position: absolute;
+	top: 58px;
+	left: 10px;
+	z-index: 5;
+}
+/* 胡子 */
+.group .head .eye-bottom .mustache {
+	position: relative;
+	z-index: 5;
+}
+/* 左侧胡子 */
+.group .head .eye-bottom .mustache .left {
+	position: absolute;
+	z-index: 5;
+}
+.group .head .eye-bottom .mustache .left .l1 {
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	background: #333;
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+.group .head .eye-bottom .mustache .left .l2 {
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(0deg);
+	background: #333;
+	position: absolute;
+	top: 80px;
+	left: 16px;
+}
+.group .head .eye-bottom .mustache .left .l3 {
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(-20deg);
+	background: #333;
+	position: absolute;
+	top: 100px;
+	left: 20px;
+}
+/* 右侧胡子 */
+.group .head .eye-bottom .mustache .right .l1 {
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(-20deg);
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+	-ms-transform: rotate(-20deg);
+	-o-transform: rotate(-20deg);
+	background: #333;
+	position: absolute;
+	top: 60px;
+	right: 20px;
+}
+.group .head .eye-bottom .mustache .right .l2{
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(0deg);
+	background: #333;
+	position: absolute;
+	top: 80px;
+	right: 16px;
+}
+.group .head .eye-bottom .mustache .right .l3 {
+	width: 76px;
+	height: 2px;
+	z-index: 6;
+	transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-moz-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	background: #333;
+	position: absolute;
+	top: 100px;
+	right: 20px;
+}
+/* 头以下的部分 */
+.group .body {
+	width: 214px;
+	height: 200px;
+	background: #597ab1;
+	border: 2px solid #333;
+	border-radius: 44px 40px 60px 60px;
+	margin: 0 auto;
+	z-index: 2;
+	position: relative;
+}
+/* 肚子 */
+.group .body .tummy {
+	width: 160px;
+	height: 160px;
+	background: #f2f2f2;
+	border-radius: 50%;
+	position: absolute;
+	top: -20px;
+	left: 28px;
+	z-index: 2;
+}
+/* 分开双腿 */
+.group .body .tummy .clear {
+	width: 45px;
+	height: 30px;
+	background: #88ffff;
+	border-top: 2px solid #333;
+	border-radius: 30px 30px 0 0;
+	position: absolute;
+	top: 190px;
+	left: 54px;
+}
+/* 百宝袋 */
+.group .body .tummy .pocket {
+	width: 120px;
+	height: 60px;
+	border-radius: 0 0 60px 60px;
+	border: 2px solid #555;
+	position: absolute;
+	top: 84px;
+	left: 18px;
+}
+/* 两臂 */
+.group .body .arm {
+	position: absolute;
+	top: 24px;
+	left: -46px;
+}
+/* 左胳膊 */
+.group .body .arm .l-arm {
+	width: 80px;
+	height: 50px;
+	background: #597ab1;
+	transform: rotate(-30deg);
+	-webkit-transform: rotate(-30deg);
+	-moz-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	-o-transform: rotate(-30deg);
+	position: absolute;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+/* 左手 */
+.group .body .arm .l-arm .l-hand {
+	width: 60px;
+	height: 60px;
+	border-radius: 46%;
+	background: #f2f2f2;
+	border: 2px solid #333;
+	position: absolute;
+	top: -10px;
+	left: -40px;
+}
+/* 右胳膊 */
+.group .body .arm .r-arm {
+	width: 80px;
+	height: 50px;
+	background: #597ab1;
+	transform: rotate(30deg);
+	position: absolute;
+	left: 230px;
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
+}
+/* 右手 */
+.group .body .arm .r-arm .r-hand {
+	width: 60px;
+	height: 60px;
+	border-radius: 46%;
+	background: #f2f2f2;
+	border: 2px solid #333;
+	position: absolute;
+	top: -4px;
+	left: 58px;
+}
+/* 脚丫子 */
+.group .body .foot {
+	position: absolute;
+	top: 150px;
+	left: 6px;
+	z-index: 2;
+}
+/* 左脚 */
+.group .body .foot .l-foot {
+	width: 80px;
+	height: 80px;
+	border-radius: 46%;
+	background: #f2f2f2;
+	border: 2px solid #333;
+	position: absolute;
+	left: 120px;
+}
+/* 右脚 */
+.group .body .foot .r-foot {
+	width: 80px;
+	height: 80px;
+	border-radius: 46%;
+	background: #f2f2f2;
+	border: 2px solid #333;	
+	position: absolute;
+}
+/* 覆盖杂质 */
+.group .body .l-clear {
+	width: 33px;
+	height: 6px;
+	background: #597ab1;
+	transform: rotate(-30deg);
+	position: absolute;
+	top: 66px;
+	left: -4px;
+	z-index: 5;
+
+}
+.group .body .r-clear {
+	width: 30px;
+	height: 6px;
+	background: #597ab1;
+	border-radius: 0 6px 0 6px;
+	transform: rotate(30deg);
+	position: absolute;
+	top: 64px;
+	left: 185px;
+	z-index: 5;
+}
