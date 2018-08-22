@@ -357,15 +357,15 @@ footer .copy span {
 	color: #888;
 }
 /* 登录接口结束 */
-.login-slideBar ul {
+.login-slideBar form ul {
     list-style: none;
     margin-top: 18%;
 	text-align: center;
 }
-.login-slideBar ul li {
+.login-slideBar form ul li {
     margin: 14px 0;
 }
-.login-slideBar ul li input {
+.login-slideBar form ul li input {
 	border: none;
 	outline: none;
 	background: rgba(255,255,255,.5);
@@ -373,19 +373,10 @@ footer .copy span {
 	padding: 6px;
 	color: #000;
 }
-.login-slideBar ul li input:hover {
+.login-slideBar form ul li input:hover {
 	background: rgba(255,255,255,.7);
 }
-.login-slideBar ul li:last-child {
-	width: 187px;
-	height: 30px;
-	margin: 0 auto;
-}
-.login-slideBar ul li >button {
-	width: inherit;
-	height: inherit;
-	line-height: 14px;
-}
+
 /*右侧边导航栏*/
 .slideBar {
     position: fixed;
