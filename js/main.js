@@ -1,4 +1,4 @@
-$(function(){
+$(function() {
     let slideBar = $(".slideBar"),
         mask = $(".mask"),
         showSlideBar = $(".showSlideBar"),
@@ -40,17 +40,17 @@ $(function(){
  */
  $(function () {
         var speed = 2000;//滚动速度单位以毫秒计
-        var h =760;//移动距离为760px；
+        var h = 760;//移动距离为760px；
         var h2 = -760;
         var windowHeight = parseInt($("body").css("height"));//整个页面的高度
-        $(".toBottom").click(function () {
+        $(".toBottom").click( function () {
             $('html,body').animate({
                 scrollTop: h+'px'
             },
             speed);
         });
 
-        $("#top").click(function () {
+        $("#top").click( function () {
             $('html,body').animate({
                 scrollTop:h2+'px'
             },
@@ -61,7 +61,7 @@ $(function(){
 
 
 //左侧边栏
-$(function(){
+$(function() {
     let slideBar = $(".login-slideBar"),
         mask = $(".mask"),
         showSlideBar = $(".showLogin");
@@ -89,17 +89,17 @@ $(function(){
 //操作类：content-group control add
 //content-group control category add-cate input
 //隐藏组件
-function hide(){  
+function hide() {  
     var hide = document.getElementById("add-cate");
-    hide.style.display="none";
+    hide.style.display = "none";
 }   
 //显示事务组件
-function show(){  
+function show() {  
     var show = document.getElementById("add-cate");
-    show.style.display="block";
+    show.style.display = "block";
 }
 //添加文集
-function adds(){
+function adds() {
     var add = document.getElementById("add-date");
     var li = document.createElement('li');
     var text = document.getElementById("yes").value;
@@ -114,68 +114,60 @@ function adds(){
         i.className = "fa fa-fw fa-cog";
         last_1.appendChild(i);
         hide();    
-    }else{
-        //否则返回操作
     }
 }
 //添加内容
-function addArticle(){
+function addArticle() {
     var ul = document.getElementById("addShow");
     var li = document.createElement('li');
     li.className = 'add';
     var date = new Date();
     var dateStr = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+(date.getDate());
     li.innerHTML = "<p name=addp></p><i name=addi></i>";
-
     ul.appendChild(li); 
     var many = document.getElementsByName("addp");
     var many_l = many.length;
-    for(var i =0;i<many_l;i++){
-        many[i].innerHTML =dateStr;
+    for(var i =0;i<many_l;i++) {
+        many[i].innerHTML = dateStr;
     }
     var icons = document.getElementsByName("addi");
     var icons_l = icons.length;
-    for(var j = 0;j<icons_l;j++){
+    for(var j = 0;j < icons_l;j++) {
         icons[j].className = "fa fa-file";
     }
 }
-    //placeholder值优化；
-    var comment = document.getElementById('comment');
-    comment.onfocus = function (){
-        this.placeholder = '';
+//若textarea为空提交后显示错误信息；
+var timer = window.setInterval(put,2000);
+function put() {
+    var pl = document.getElementById('pl');
+    if (comment.value == '') {
+        pl.style.display = 'block';
     }
-    comment.onblur = function (){
-        this.placeholder = '看了不评论,你的良心不会痛吗？';
+    else {
+        pl.style.display = 'none';
     }
-    //若textarea为空提交后显示错误信息；
-    var timer = window.setInterval(put,2000);
-    function put(){
-        var pl = document.getElementById('pl');
-        if (comment.value == '') {
-            pl.style.display = 'block';
-        }else{
-            pl.style.display = 'none';
-        }
+}
+// 将input获取的链接给了id为show的元素，达到预览的目的。
+function changepic(obj) {
+    var newsrc = getObjectURL(obj.files[0]);
+    var princess = document.getElementById('princess');
+    if (newsrc != '') {
+        document.getElementById('show').src = newsrc;
+        princess.style.display = 'block';
     }
-    // 将input获取的链接给了id为show的元素，达到预览的目的。
-    function changepic(obj){
-        var newsrc = getObjectURL(obj.files[0]);
-        var princess = document.getElementById('princess');
-        if (newsrc != '') {
-            document.getElementById('show').src = newsrc;
-            princess.style.display = 'block';
-        }
-        
+    
+}
+//建立一个可存取到该file的url
+function getObjectURL(file) {
+    var url = null;
+    if (window.createObjectURL!=undefined) { // basic
+        url = window.createObjectURL(file);
     }
-    //建立一个可存取到该file的url
-    function getObjectURL(file){
-        var url = null;
-        if (window.createObjectURL!=undefined){ // basic
-            url = window.createObjectURL(file) ;
-        } else if (window.URL!=undefined) { // mozilla(firefox)
-            url = window.URL.createObjectURL(file) ;
-        } else if (window.webkitURL!=undefined) { // webkit or chrome
-            url = window.webkitURL.createObjectURL(file) ;
-        }
-        return url;
+    else if (window.URL!=undefined) { // mozilla(firefox)
+        url = window.URL.createObjectURL(file);
     }
+    else if (window.webkitURL!=undefined) { // webkit or chrome
+        url = window.webkitURL.createObjectURL(file);
+    }
+    return url;
+}

@@ -195,4 +195,14 @@
 </body>
 <script type="text/javascript" src="../../../js/jquery.min.js"></script>
 <script type="text/javascript" src="../../../js/main.js"></script>
+<script type="text/javascript">
+//placeholder值优化；
+var comment = document.getElementById('comment');
+comment.onfocus = function () {
+    this.placeholder = '';
+}
+comment.onblur = function () {
+    this.placeholder = '看了不评论,你的良心不会痛吗？';
+}	
+</script>
 </html>
