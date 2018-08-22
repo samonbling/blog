@@ -376,7 +376,11 @@ footer .copy span {
 .login-slideBar ul li input:hover {
 	background: rgba(255,255,255,.7);
 }
-
+.login-slideBar ul li:last-child {
+	width: 187px;
+	height: 30px;
+	margin: 0 auto;
+}
 .login-slideBar ul li >button {
 	width: inherit;
 	height: inherit;
