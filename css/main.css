@@ -377,6 +377,9 @@ footer .copy span {
 	color: #000;
 	padding: 0px;
 }
+.login-slideBar form ul li input::-webkit-input-placeholder {
+	color:#666;
+}
 .login-slideBar form ul li input:hover {
 	background: rgba(255,255,255,.7);
 }
